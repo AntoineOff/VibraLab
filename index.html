@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibraLab - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .hero {
+            padding: 50px;
+            animation: fadeIn 2s ease-in;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #ffcc00;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background: #ff9900;
+            transform: scale(1.1);
+        }
+        .carousel-container {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 0; }
+        .next { right: 0; }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VibraLab</h1>
+        <p>Explorez les dernières découvertes scientifiques</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <h2>Plongez dans la science avec VibraLab</h2>
+        <p>Des articles approfondis et des recherches de pointe</p>
+        <button onclick="exploreArticles()">Découvrir</button>
+    </section>
+    
+    <section id="articles" class="articles">
+        <h2>Nos Derniers Articles</h2>
+        <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <div class="article slide">
+                    <img src="img/article1.jpg" alt="Illustration article 1">
+                    <h3>Les mystères de l’univers</h3>
+                    <p>Explorez les récentes découvertes en astronomie...</p>
+                    <a href="#">Lire plus</a>
+                </div>
+                <div class="article slide">
+                    <img src="img/article2.jpg" alt="Illustration article 2">
+                    <h3>La biotechnologie en révolution</h3>
+                    <p>Comment les nouvelles technologies transforment la médecine...</p>
+                    <a href="#">Lire plus</a>
+                </div>
+                <div class="article slide">
+                    <img src="img/article3.jpg" alt="Illustration article 3">
+                    <h3>L’intelligence artificielle et la science</h3>
+                    <p>Comment l’IA accélère les découvertes scientifiques...</p>
+                    <a href="#">Lire plus</a>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 VibraLab - Tous droits réservés</p>
+    </footer>
+    
+    <script>
+        let slideIndex = 0;
+        function moveSlide(n) {
+            let slides = document.querySelectorAll('.slide');
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            document.querySelector('.carousel').style.transform = `translateX(${-slideIndex * 100}%)`;
+        }
+    </script>
+</body>
+</html>
