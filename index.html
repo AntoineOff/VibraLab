@@ -1,63 +1,35 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VibraLab - Accueil</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>VibraLab</h1>
-        <p>Explorez les dernières découvertes scientifiques</p>
+        <h1>Bienvenue sur Mon Site</h1>
+        <nav>
+            <ul>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="pages/login.php">Connexion</a></li>
+                <li><a href="pages/articles.php">Articles</a></li>
+                <li><a href="pages/about.php">À propos</a></li>
+                <li><a href="pages/contact.php">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section class="hero">
-        <h2>Plongez dans la science avec VibraLab</h2>
-        <p>Des articles approfondis et des recherches de pointe</p>
-        <button onclick="exploreArticles()">Découvrir</button>
-    </section>
-    
-    <section id="articles" class="articles">
-        <h2>Nos Derniers Articles</h2>
-        <div class="carousel-container">
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="carousel">
-                <div class="article slide">
-                    <img src="img/article1.jpg" alt="Illustration article 1">
-                    <h3>Les mystères de l’univers</h3>
-                    <p>Explorez les récentes découvertes en astronomie...</p>
-                    <a href="#">Lire plus</a>
-                </div>
-                <div class="article slide">
-                    <img src="img/article2.jpg" alt="Illustration article 2">
-                    <h3>La biotechnologie en révolution</h3>
-                    <p>Comment les nouvelles technologies transforment la médecine...</p>
-                    <a href="#">Lire plus</a>
-                </div>
-                <div class="article slide">
-                    <img src="img/article3.jpg" alt="Illustration article 3">
-                    <h3>L’intelligence artificielle et la science</h3>
-                    <p>Comment l’IA accélère les découvertes scientifiques...</p>
-                    <a href="#">Lire plus</a>
-                </div>
-            </div>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
-    </section>
-    
+    <main>
+        <section>
+            <h2>Découvrez nos derniers articles</h2>
+            <p>Parcourez nos sujets et trouvez ce qui vous intéresse.</p>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2025 VibraLab - Tous droits réservés</p>
+        <p>&copy; 2025 Mon Site. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
