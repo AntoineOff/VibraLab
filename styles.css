@@ -206,10 +206,10 @@ ul li {
     margin-bottom: 0.8rem;
 }
 
-/* Footer - Changement de la couleur du texte */
+/* Footer - Fond plus clair */
 footer {
-    background: #3b82f6;
-    color: #2e5263; /* Remplacement de white par un gris clair */
+    background: #3b82f6; /* Bleu moyen plus clair que #1e40af */
+    color: white;
     text-align: center;
     padding: 1.5rem;
 }
