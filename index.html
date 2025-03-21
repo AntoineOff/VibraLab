@@ -8,52 +8,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#fonctionnement">Fonctionnement</a></li>
-                <li><a href="#risques">Risques</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Comment Fonctionnent les Centrales Nucléaires ?</h1>
-            <p>Découvrez leur fonctionnement, leurs avantages et leurs défis.</p>
-            <button class="scroll-btn">Explorer</button>
+    <div class="intro-overlay">
+        <div class="intro-content">
+            <h1>Centrale Nucléaire</h1>
+            <p>Un projet pour comprendre et explorer</p>
         </div>
+    </div>
+
+    <header>
+        <h1 class="header-title">⚡ Comprendre l'Énergie Nucléaire</h1>
     </header>
 
     <main>
-        <section id="intro" class="card">
-            <h2>Introduction</h2>
-            <p>Lorsqu’on parle des centrales nucléaires, des événements comme Fukushima ou Tchernobyl viennent souvent à l’esprit. Pourtant, comprendre leur fonctionnement, leurs avantages, leurs risques et les solutions pour les améliorer est essentiel face aux idées reçues.</p>
-            <p>Une centrale nucléaire est une centrale thermique qui produit de l’électricité grâce à la chaleur issue de la fission nucléaire, un processus où des atomes lourds, comme l’uranium 235, se divisent en libérant une énergie colossale.</p>
-        </section>
-
-        <section id="fonctionnement" class="card">
-            <h2>Le Fonctionnement</h2>
-            <div class="content">
-                <p>La fission nucléaire démarre lorsqu’un neutron frappe un atome d’uranium, provoquant sa division et une réaction en chaîne. Cette énergie chauffe de l’eau dans le circuit primaire à 320°C sous pression. Cette eau chauffe ensuite un circuit secondaire, produisant de la vapeur qui fait tourner des turbines reliées à un alternateur pour générer de l’électricité.</p>
-                <div class="image-placeholder">Schéma de la conversion d’énergie (à insérer)</div>
-                <p>Un circuit de refroidissement condense la vapeur pour la réutiliser, souvent avec des tours aéroréfrigérantes. Les émissions visibles ne sont que de la vapeur d’eau non radioactive.</p>
+        <div class="tabs">
+            <div class="tabs-list">
+                <button class="tab-trigger active" data-tab="introduction">Introduction</button>
+                <button class="tab-trigger" data-tab="fonctionnement">Fonctionnement</button>
+                <button class="tab-trigger" data-tab="risques">Risques & Impacts</button>
+                <button class="tab-trigger" data-tab="solutions">Solutions</button>
             </div>
-        </section>
 
-        <section id="risques" class="card">
-            <h2>Risques et Impacts</h2>
-            <p>Les catastrophes comme Tchernobyl (1986) ou Fukushima (2011) montrent les dangers en cas de défaillance ou de catastrophe naturelle. Les radiations peuvent causer des cancers et contaminer l’environnement sur de longues périodes, rendant des zones inhabitables.</p>
-            <p>Les déchets nucléaires, très radioactifs, nécessitent un enfouissement profond et un traitement complexe pour limiter les risques sanitaires.</p>
-        </section>
+            <div class="tabs-content">
+                <div class="tab-panel active" id="introduction">
+                    <div class="card">
+                        <h2>📖 Introduction</h2>
+                        <p>Lorsqu’on évoque le sujet des centrales nucléaires, on pense immédiatement aux accidents comme Fukushima ou Tchernobyl. Pourtant, elles sont une source d’énergie clé. Découvrez leur fonctionnement, leurs risques et les solutions pour un avenir plus sûr.</p>
+                    </div>
+                </div>
 
-        <section id="solutions" class="card">
-            <h2>Solutions pour l’Avenir</h2>
-            <ul>
-                <li><strong>Fusion nucléaire :</strong> Moins risquée et plus durable, elle utilise des ressources abondantes comme l’eau, mais reste expérimentale (ex. projet ITER).</li>
-                <li><strong>Petits Réacteurs Modulaires (PRM) :</strong> Plus flexibles et économiques pour répondre aux besoins locaux.</li>
-                <li><strong>Traitement des déchets :</strong> Le procédé PUREX recycle les combustibles usés, réduisant leur dangerosité.</li>
-            </ul>
-        </section>
+                <div class="tab-panel" id="fonctionnement">
+                    <div class="card">
+                        <h2>🔬 Comment une centrale nucléaire produit-elle de l’électricité ?</h2>
+                        <p>La fission d’uranium produit de la chaleur qui transforme l’eau en vapeur. Cette vapeur fait tourner une turbine reliée à un alternateur, générant ainsi de l’électricité.</p>
+                        <div class="highlight">⚡ Réaction en chaîne = Énergie</div>
+                        <div class="image-placeholder">Schéma de la conversion d’énergie (à insérer)</div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="risques">
+                    <div class="card">
+                        <h2>⚠️ Risques et Impacts Environnementaux</h2>
+                        <ul>
+                            <li>Possibilité d’accidents nucléaires (ex. Tchernobyl, Fukushima).</li>
+                            <li>Gestion complexe des déchets radioactifs.</li>
+                            <li>Conséquences sanitaires et écologiques graves.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="solutions">
+                    <div class="card">
+                        <h2>🌍 Solutions pour un Nucléaire Durable</h2>
+                        <ul>
+                            <li>Développement de la fusion nucléaire (ex. projet ITER).</li>
+                            <li>Petits réacteurs modulaires pour plus de flexibilité.</li>
+                            <li>Recyclage des déchets via le procédé PUREX.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
