@@ -239,15 +239,14 @@ footer {
     }
 }
 
-.image-container {
-    max-width: 300px;        /* Taille maximum du conteneur */
-    overflow: hidden;        /* Cache les parties dépassantes */
+.image-wrapper {
+    text-align: center;    /* Centre les éléments inline ou inline-block */
 }
 
-.image-container img {
-    max-width: 100%;        /* L'image ne dépasse pas son conteneur */
-    max-height: 200px;      /* Hauteur maximum */
-    width: auto;           /* Conserve les proportions */
+.image-centree {
+    max-width: 300px;
+    max-height: 200px;
+    width: 100%;
     height: auto;
-    display: block;        /* Évite les espaces indésirables */
+    display: inline-block; /* Nécessaire pour text-align */
 }
