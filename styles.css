@@ -17,7 +17,7 @@ body {
 .intro-overlay {
     position: fixed;
     inset: 0;
-    background-image: url('centrale-nucleaire.jpg');
+    background-image: url('images/centrale-nucleaire.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
