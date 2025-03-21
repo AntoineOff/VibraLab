@@ -17,7 +17,7 @@ body {
 .intro-overlay {
     position: fixed;
     inset: 0;
-    background-image: url('images/centrale-nucleaire.jpg');
+    background-image: url('/images/centrale-nucleaire.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -47,12 +47,12 @@ body {
     color: #ffffff;
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    border: 3px solid #ffd700; /* Cadre doré */
+    border: 3px solid #ffd700;
     padding: 0.5rem 1.5rem;
-    background: rgba(30, 64, 175, 0.8); /* Fond semi-transparent bleu foncé */
+    background: rgba(30, 64, 175, 0.8);
     border-radius: 10px;
     display: inline-block;
-    animation: glow 2s infinite alternate; /* Animation de lueur */
+    animation: glow 2s infinite alternate;
 }
 
 .intro-content p {
@@ -206,9 +206,9 @@ ul li {
     margin-bottom: 0.8rem;
 }
 
-/* Footer */
+/* Footer - Fond plus clair */
 footer {
-    background: #1e40af;
+    background: #3b82f6; /* Bleu moyen plus clair que #1e40af */
     color: white;
     text-align: center;
     padding: 1.5rem;
