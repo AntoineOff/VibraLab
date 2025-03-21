@@ -17,7 +17,7 @@ body {
 .intro-overlay {
     position: fixed;
     inset: 0;
-    background-image: url(''); /* Exemple d'image placeholder */
+    background-image: url('istockphoto-658599072-612x612.jpg'); /* Exemple d'image placeholder */
     background-size: cover;
     background-position: center;
     display: flex;
