@@ -238,3 +238,16 @@ footer {
         font-size: 1rem;
     }
 }
+
+.image-container {
+    max-width: 300px;        /* Taille maximum du conteneur */
+    overflow: hidden;        /* Cache les parties dépassantes */
+}
+
+.image-container img {
+    max-width: 100%;        /* L'image ne dépasse pas son conteneur */
+    max-height: 200px;      /* Hauteur maximum */
+    width: auto;           /* Conserve les proportions */
+    height: auto;
+    display: block;        /* Évite les espaces indésirables */
+}
