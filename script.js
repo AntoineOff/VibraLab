@@ -1,32 +1,23 @@
-// Défilement doux pour les liens de navigation
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+// Gestion des onglets
+const tabs = document.querySelectorAll('.tab-trigger');
+const panels = document.querySelectorAll('.tab-panel');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Désactiver l'onglet actif
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+
+        // Activer l'onglet cliqué
+        tab.classList.add('active');
+        const tabId = tab.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
     });
 });
 
-// Défilement doux pour le bouton "Explorer"
-document.querySelector('.scroll-btn').addEventListener('click', () => {
-    document.querySelector('#intro').scrollIntoView({
-        behavior: 'smooth'
-    });
+// Apparition initiale
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.querySelector('.intro-overlay').style.display = 'none';
+    }, 3000);
 });
-
-// Animation des cartes au défilement
-const cards = document.querySelectorAll('.card');
-
-const revealCards = () => {
-    const windowHeight = window.innerHeight;
-    cards.forEach(card => {
-        const cardTop = card.getBoundingClientRect().top;
-        if (cardTop < windowHeight - 100) {
-            card.classList.add('visible');
-        }
-    });
-};
-
-window.addEventListener('scroll', revealCards);
-window.addEventListener('load', revealCards);
