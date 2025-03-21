@@ -13,11 +13,13 @@ body {
     overflow-x: hidden;
 }
 
-/* Intro Overlay - Modification pour opacité complète */
+/* Intro Overlay - Utilisation d'une image d'illustration */
 .intro-overlay {
     position: fixed;
     inset: 0;
-    background: #ffffff; /* Changement de rgba(255, 255, 255, 0.9) à blanc opaque */
+    background-image: url('https://images.unsplash.com/photo-1624920409089-9e7c6b45e897?q=80&w=2070&auto=format&fit=crop'); /* Exemple d'image placeholder */
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,16 +28,32 @@ body {
     animation: fadeScale 3s ease forwards;
 }
 
+/* Ajout d'un voile sombre pour améliorer la lisibilité du texte */
+.intro-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* Voile sombre semi-transparent */
+}
+
+.intro-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
 .intro-content h1 {
     font-size: 3rem;
-    color: #1e40af;
+    color: #ffffff; /* Texte blanc pour contraste avec l'image */
     font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour lisibilité */
 }
 
 .intro-content p {
     font-size: 1.2rem;
-    color: #4b5563;
+    color: #ffffff;
     margin-top: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadeScale {
@@ -198,5 +216,13 @@ footer {
 
     .header-title {
         font-size: 2rem;
+    }
+
+    .intro-content h1 {
+        font-size: 2rem;
+    }
+
+    .intro-content p {
+        font-size: 1rem;
     }
 }
