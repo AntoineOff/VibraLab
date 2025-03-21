@@ -17,7 +17,7 @@ body {
 .intro-overlay {
     position: fixed;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1624920409089-9e7c6b45e897?q=80&w=2070&auto=format&fit=crop'); /* Exemple d'image placeholder */
+    background-image: url(''); /* Exemple d'image placeholder */
     background-size: cover;
     background-position: center;
     display: flex;
