@@ -18,76 +18,85 @@
     <header>
         <h1 class="header-title">⚡ Comprendre les Centrales Nucléaire ⚡ </h1>
     </header>
-    
-    <main>        
-    <div class="tabs">
-        <div class="tabs-list">
-            <button class="tab-trigger active" data-tab="introduction">Introduction</button>
-            <button class="tab-trigger" data-tab="fonctionnement">Fonctionnement</button>
-            <button class="tab-trigger" data-tab="chaine-conversion">Chaîne de conversion</button> <!-- Nouvel onglet -->
-            <button class="tab-trigger" data-tab="risques">Risques & Impacts</button>
-            <button class="tab-trigger" data-tab="solutions">Solutions</button>
-            <button class="tab-trigger" data-tab="apropos">À propos</button>
-        </div>
 
-        <div class="tabs-content">
-            <div class="tab-panel active" id="introduction">
-                <div class="card">
-                    <h2>📖 Introduction :</h2>
-                    <p1>Lorsqu’on évoque le sujet des <strong>centrales nucléaires</strong>, on pense immédiatement aux graves accidents comme <strong>Fukushima</strong> ou encore <strong>Tchernobyl</strong>.</p1>
-                    <br></br>
-                    <p2>Face aux <strong>craintes</strong> et aux <strong>divers préjugés</strong> sur ce domaine sensible, découvrons aujourd'hui leurs <strong>fonctionnements, leurs risques et les solutions pour un avenir plus sûr</strong>.</p2>
+    <main>
+        <div class="tabs">
+            <div class="tabs-list">
+                <button class="tab-trigger active" data-tab="introduction">Introduction</button>
+                <button class="tab-trigger" data-tab="fonctionnement">Fonctionnement</button>
+                <button class="tab-trigger" data-tab="Chaine">Fonctionnement</button>
+                <button class="tab-trigger" data-tab="risques">Risques & Impacts</button>
+                <button class="tab-trigger" data-tab="solutions">Solutions</button>
+                <button class="tab-trigger" data-tab="apropos">À propos</button>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-panel active" id="introduction">
+                    <div class="card">
+                        <h2>📖 Introduction :</h2>
+                        <p1>Lorsqu’on évoque le sujet des <strong>centrales nucléaires</strong>, on pense immédiatement aux graves accidents comme <strong>Fukushima</strong> ou encore <strong>Tchernobyl</strong>.</p1>
+                        <br></br>
+                        <p2>Face aux <strong>craintes</strong> et aux <strong>divers préjugés</strong> sur ce domaine sensible, découvrons aujourd'hui leurs <strong>fonctionnements, leurs risques et les solutions pour un avenir plus sûr</strong>.</p2>
+                        </div>
+                </div>
+
+                <div class="tab-panel" id="fonctionnement">
+                    <div class="card">
+                        <h2>🔬 Comment une centrale nucléaire produit-elle de l’électricité ?</h2>
+                        <p>La fission d’uranium produit de la chaleur qui transforme l’eau en vapeur. Cette vapeur fait tourner une turbine reliée à un alternateur, générant ainsi de l’électricité.</p>
+                        <div class="highlight">⚡ Réaction en chaîne = Énergie</div>
+                        <div class="image-placeholder">Schéma de la conversion d’énergie (à insérer)</div>
                     </div>
                 </div>
-                       
-            <div class="tab-panel" id="fonctionnement">
-                <div class="card">
-                    <h2>🔬 Comment une centrale nucléaire produit-elle de l’électricité ?</h2>
-                    <p>La fission d’uranium produit de la chaleur qui transforme l’eau en vapeur. Cette vapeur fait tourner une turbine reliée à un alternateur, générant ainsi de l’électricité.</p>
-                    <div class="highlight">⚡ Réaction en chaîne = Énergie</div>
-                    <div class="image-placeholder">Schéma de la conversion d’énergie (à insérer)</div>
-                </div>
-            </div>
 
-            <!-- Nouveau panneau pour "Chaîne de conversion" -->
-            <div class="tab-panel" id="chaine-conversion">
-                <div class="card">
-                    <h2>🔄 La Chaîne de Conversion Énergétique</h2>
-                    <p>La production d’électricité dans une centrale nucléaire suit une série d’étapes précises : la fission nucléaire génère de la chaleur, qui chauffe l’eau pour produire de la vapeur. Cette vapeur entraîne une turbine, laquelle est couplée à un alternateur qui convertit l’énergie mécanique en énergie électrique.</p>
-                    <div class="highlight">🔋 Étapes clés : Fission → Chaleur → Vapeur → Électricité</div>
-                    <div class="image-placeholder">Schéma détaillé de la chaîne de conversion (à insérer)</div>
+                <div class="tab-panel" id="Chaine">
+                    <div class="card">
+                        <h2>⚠️ Risques et Impacts Environnementaux</h2>
+                        <ul>
+                            <li>Possibilité d’accidents nucléaires (ex. Tchernobyl, Fukushima).</li>
+                            <li>Gestion complexe des déchets radioactifs.</li>
+                            <li>Conséquences sanitaires et écologiques graves.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="tab-panel" id="risques">
-                <div class="card">
-                    <h2>⚠️ Risques et Impacts Environnementaux</h2>
-                    <ul>
-                        <li>Possibilité d’accidents nucléaires (ex. Tchernobyl, Fukushima).</li>
-                        <li>Gestion complexe des déchets radioactifs.</li>
-                        <li>Conséquences sanitaires et écologiques graves.</li>
-                    </ul>
+                <div class="tab-panel" id="risques">
+                    <div class="card">
+                        <h2>⚠️ Risques et Impacts Environnementaux</h2>
+                        <ul>
+                            <li>Possibilité d’accidents nucléaires (ex. Tchernobyl, Fukushima).</li>
+                            <li>Gestion complexe des déchets radioactifs.</li>
+                            <li>Conséquences sanitaires et écologiques graves.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="tab-panel" id="solutions">
-                <div class="card">
-                    <h2>🌍 Solutions pour un Nucléaire Durable</h2>
-                    <ul>
-                        <li>Développement de la fusion nucléaire (ex. projet ITER).</li>
-                        <li>Petits réacteurs modulaires pour plus de flexibilité.</li>
-                        <li>Recyclage des déchets via le procédé PUREX.</li>
-                    </ul>
+                <div class="tab-panel" id="solutions">
+                    <div class="card">
+                        <h2>🌍 Solutions pour un Nucléaire Durable</h2>
+                        <ul>
+                            <li>Développement de la fusion nucléaire (ex. projet ITER).</li>
+                            <li>Petits réacteurs modulaires pour plus de flexibilité.</li>
+                            <li>Recyclage des déchets via le procédé PUREX.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="tab-panel" id="apropos">
-                <div class="card">
-                    <h2>👤 À propos</h2>
-                    <p>Ce site a été créé par <strong>Dr. Julien Morel</strong>, un passionné de physique nucléaire et de vulgarisation scientifique. Ancien ingénieur chez un grand groupe énergétique français, Julien a travaillé pendant plus de 15 ans sur des projets liés à la sécurité des réacteurs et à la gestion des déchets radioactifs. Après avoir constaté le manque d’informations accessibles au grand public sur ce sujet complexe, il a décidé de lancer ce projet en 2023 pour démystifier l’énergie nucléaire.</p>
-                    <p>Auteur de plusieurs articles scientifiques et conférencier invité dans des universités européennes, Julien combine son expertise technique avec une approche pédagogique. Lorsqu’il ne travaille pas sur ce site, il explore les sentiers de randonnée dans les Alpes ou expérimente des recettes de cuisine moléculaire.</p>
+                <div class="tab-panel" id="apropos">
+                    <div class="card">
+                        <h2>👤 À propos</h2>
+                        <p>Ce site a été créé par <strong>Dr. Julien Morel</strong>, un passionné de physique nucléaire et de vulgarisation scientifique. Ancien ingénieur chez un grand groupe énergétique français, Julien a travaillé pendant plus de 15 ans sur des projets liés à la sécurité des réacteurs et à la gestion des déchets radioactifs. Après avoir constaté le manque d’informations accessibles au grand public sur ce sujet complexe, il a décidé de lancer ce projet en 2023 pour démystifier l’énergie nucléaire.</p>
+                        <p>Auteur de plusieurs articles scientifiques et conférencier invité dans des universités européennes, Julien combine son expertise technique avec une approche pédagogique. Lorsqu’il ne travaille pas sur ce site, il explore les sentiers de randonnée dans les Alpes ou expérimente des recettes de cuisine moléculaire.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
+
+    <footer>
+        <p>© 2025 - Les Centrales Nucléaires Expliquées | Conçu pour informer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
