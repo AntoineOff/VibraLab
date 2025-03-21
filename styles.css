@@ -17,7 +17,7 @@ body {
 .intro-overlay {
     position: fixed;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1624920409089-9e7c6b45e897?q=80&w=2070&auto=format&fit=crop');
+    background-image: url('/images/centrale-nucleaire.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -165,9 +165,8 @@ h2 {
 
 p {
     font-size: 1.1rem;
-    color: #ffffff; /* Remplacement de #4b5563 par blanc */
+    color: #4b5563;
     margin-bottom: 1rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Ombre légère pour lisibilité */
 }
 
 .highlight {
@@ -193,25 +192,23 @@ p {
     align-items: center;
     justify-content: center;
     font-style: italic;
-    color: #ffffff; /* Remplacement de #6b7280 par blanc */
+    color: #6b7280;
     margin-top: 1rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Ombre légère pour contraste */
 }
 
 ul {
     list-style: disc;
     padding-left: 1.5rem;
-    color: #ffffff; /* Remplacement de #4b5563 par blanc */
+    color: #4b5563;
 }
 
 ul li {
     margin-bottom: 0.8rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Ombre légère pour lisibilité */
 }
 
-/* Footer */
+/* Footer - Fond plus clair */
 footer {
-    background: #3b82f6;
+    background: #3b82f6; /* Bleu moyen plus clair que #1e40af */
     color: white;
     text-align: center;
     padding: 1.5rem;
