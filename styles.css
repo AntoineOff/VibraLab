@@ -13,11 +13,11 @@ body {
     overflow-x: hidden;
 }
 
-/* Intro Overlay */
+/* Intro Overlay - Modification pour opacité complète */
 .intro-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.9);
+    background: #ffffff; /* Changement de rgba(255, 255, 255, 0.9) à blanc opaque */
     display: flex;
     align-items: center;
     justify-content: center;
