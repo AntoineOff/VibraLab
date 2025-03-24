@@ -1,148 +1,228 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(90deg, #FF69B4, #C71585);
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFC1CC;
 }
 
 .login-signup a {
     color: #fff;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.signup-btn {
+    background-color: #FFC1CC;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #C71585;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.signup-btn:hover {
+    transform: scale(1.05);
 }
 
 .hero {
-    background-image: url('hero.jpg');
-    background-size: cover;
-    height: 500px;
+    background: linear-gradient(45deg, #FF69B4, #FFC1CC);
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
     color: #fff;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero p {
     font-size: 24px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.hero button {
-    background-color: #ff6600;
+.hero-btn {
+    background-color: #C71585;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 25px;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .features {
-    padding: 50px 0;
+    padding: 60px 20px;
     text-align: center;
+    background-color: #fff;
 }
 
 .features h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #C71585;
+    margin-bottom: 40px;
 }
 
-.features ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.features ul li {
-    font-size: 24px;
-    margin: 0 20px;
+.feature-item {
+    background-color: #FFC1CC;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
 }
 
 .testimonials {
-    background-color: #f2f2f2;
-    padding: 50px 0;
+    background-color: #f9f9f9;
+    padding: 60px 20px;
     text-align: center;
 }
 
 .testimonials h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #FF69B4;
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .testimonial {
-    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial p {
-    font-size: 24px;
+    font-size: 20px;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .testimonial cite {
-    font-style: normal;
-    font-weight: bold;
+    font-style: italic;
+    color: #C71585;
 }
 
 .latest-members {
-    padding: 50px 0;
+    padding: 60px 20px;
     text-align: center;
 }
 
 .latest-members h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #C71585;
+    margin-bottom: 40px;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .member {
-    display: inline-block;
-    margin: 0 20px;
+    text-align: center;
 }
 
 .member img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
+    border: 4px solid #FFC1CC;
+    transition: transform 0.3s ease;
+}
+
+.member img:hover {
+    transform: scale(1.1);
 }
 
 .member p {
     font-size: 18px;
+    color: #333;
+    margin-top: 10px;
 }
 
 footer {
-    background-color: #333;
+    background: linear-gradient(90deg, #C71585, #FF69B4);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -152,19 +232,24 @@ footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 footer ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 footer ul li a {
-    color: #fff;
+    color: #FFC1CC;
     text-decoration: none;
+    font-size: 16px;
 }
 
-/* Media Queries pour la réactivité */
+footer ul li a:hover {
+    color: #fff;
+}
 
+/* Réactivité */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -172,14 +257,13 @@ footer ul li a {
     }
     nav ul {
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: 15px;
     }
     nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
     .hero {
-        height: 300px;
+        height: 400px;
     }
     .hero h1 {
         font-size: 36px;
@@ -187,16 +271,8 @@ footer ul li a {
     .hero p {
         font-size: 18px;
     }
-    .features ul {
-        flex-direction: column;
-    }
-    .features ul li {
-        margin: 10px 0;
-    }
-    .testimonials .testimonial {
-        margin-bottom: 30px;
-    }
-    .latest-members .member {
-        margin: 20px 0;
+    .hero-btn {
+        padding: 10px 20px;
+        font-size: 16px;
     }
 }
