@@ -140,22 +140,85 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-.content {
+.testimonials {
+    background-color: #f9f9f9;
     padding: 60px 20px;
     text-align: center;
-    background-color: #fff;
 }
 
-.content h1 {
+.testimonials h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     color: #FF69B4;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.content p {
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
     font-size: 20px;
     color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial cite {
+    font-style: italic;
+    color: #C71585;
+}
+
+.latest-members {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.latest-members h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #C71585;
+    margin-bottom: 40px;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.member {
+    text-align: center;
+}
+
+.member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #FFC1CC;
+    transition: transform 0.3s ease;
+}
+
+.member img:hover {
+    transform: scale(1.1);
+}
+
+.member p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
 }
 
 footer {
@@ -210,12 +273,6 @@ footer ul li a:hover {
     }
     .hero-btn {
         padding: 10px 20px;
-        font-size: 16px;
-    }
-    .content h1 {
-        font-size: 32px;
-    }
-    .content p {
         font-size: 16px;
     }
 }
